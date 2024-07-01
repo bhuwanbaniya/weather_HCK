@@ -1,0 +1,25 @@
+queryfor creating Database =>                                                   +
+                                                                                +
+    CREATE DATABASE IF NOT EXISTS weather00_db;                         +
+                                                                                +
+                                                                                +
+------------------------------------------------------------------------------- +
+                                                                                +   
+query for creatiing database table =>                                           +
+                                                                                +
+CREATE TABLE weather_bhuwanbaniya (                                        +
+    id INT AUTO_INCREMENT PRIMARY KEY,                                          +
+    city VARCHAR(100) NOT NULL,                                                 +
+    date DATETIME NOT NULL,                                                     +
+    temperature FLOAT NOT NULL,                                                 +
+    humidity INT NOT NULL,                                                      +
+    pressure INT NOT NULL,                                                      +
+    wind FLOAT NOT NULL,                                                        +
+    description VARCHAR(255) NOT NULL                                           +
+);                                                                              +
+                                                                                +
+                                                                                +
+                                                                                +
+                                                                                +
+                                                                                +
+ -------------------------------------------------------------------------------+                                                                                       

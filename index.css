@@ -1,0 +1,223 @@
+/*bhuwanbaniya_2414002*/
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(Bhuwanbaniya2_2414002.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #f3eded;
+    background-blend-mode: darken;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(239, 61, 7, 0.5), 0 0 10px rgba(88, 2, 2, 0.3) inset;
+}
+
+h1 {
+    border-radius: 20px;
+    padding: 20px 25px;
+    background-color: rgba(0, 0, 0, 0.653);
+    font-size: 43px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(12, 2, 71, 0.2), 0 0 15px rgba(9, 3, 77, 0.5);
+    
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-control {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    padding: 15px 25px;
+    background-color: #f58220; /* Orange color */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.btn:hover {
+    background-color: #050221; /* Darker orange on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+.weather-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.weather {
+    width: 400px; /* Set fixed width for square appearance */
+    height: 280px; /* Set fixed height for square appearance */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1) inset;
+    transition: transform 0.3s ease;
+}
+
+.weather:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2) inset;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.temp {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.weather-description {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.weather-info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.humidity, .wind, .pressure {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.btn1 {
+    padding: 15px 30px;
+    background-color: #ff8400;
+    color: #f6eded;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(20, 21, 23, 0.11);
+}
+
+.btn1:hover {
+    background-color: #040405;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+/* Style for the container of past weather data boxes */
+.past-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px; /* Adjusted margin-top for better spacing */
+    width: 100%;
+}
+
+/* Style for each past weather data box */
+.past-weather-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 18px;
+    margin: 10px;
+    width: calc(100% - 40px); /* Adjust the width based on your layout */
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.past-weather-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2) inset;
+}
+
+/* Style for the content inside each past weather data box */
+.past-weather-content {
+    color: #fff;
+}
+
+/* Style for the headers inside past weather data boxes */
+.past-weather-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Style for the individual weather data entries */
+.past-weather-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
